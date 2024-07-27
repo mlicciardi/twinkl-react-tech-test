@@ -1,10 +1,19 @@
-import styles from "./App.module.scss";
+import React from "react";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import PublicLayout from "./layouts/PublicLayout";
+import SearchPage from "./pages/SearchPage";
+import NotFoundPage from "./pages/NotFoundPage";
 
-const App = () => {
+const App: React.FC = () => {
   return (
-    <div className={styles.app}>
-      <h1>Hello Twinkl!</h1>
-    </div>
+    <Router>
+      <Routes>
+        <Route element={<PublicLayout />}>
+          <Route path="/" element={<SearchPage />} />
+          <Route path="*" element={<NotFoundPage />} />
+        </Route>
+      </Routes>
+    </Router>
   );
 };
 

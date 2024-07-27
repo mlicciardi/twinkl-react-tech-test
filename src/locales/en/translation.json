@@ -1,0 +1,7 @@
+{
+  "searchPlaceholder": "Search blog posts",
+  "loading": "Loading...",
+  "error": "An error occurred",
+  "empty": "No blog posts found",
+  "delete": "Delete"
+}
