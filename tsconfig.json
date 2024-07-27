@@ -21,19 +21,22 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
+    "forceConsistentCasingInFileNames": true,
+    /* Paths */
     "paths": {
       "@/*": [
         "./src/*",
         "./dist/*"
-      ],
+      ]
     },
+    /* Types */
     "types": [
       "vitest/globals",
       "@testing-library/jest-dom"
-    ],
+    ]
   },
   "include": [
-    "./src/*"
+    "src"
   ],
   "references": [
     {

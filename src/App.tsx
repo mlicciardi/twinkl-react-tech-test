@@ -1,9 +1,11 @@
+import styles from "./App.module.scss";
+
 const App = () => {
   return (
-      <div>
-          <h1>Hello Twinkl!</h1>
-      </div>
-  )
-}
+    <div className={styles.app}>
+      <h1>Hello Twinkl!</h1>
+    </div>
+  );
+};
 
 export default App;
